@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -15,11 +15,11 @@ import AdminLogin from "./pages/AdminLogin";
 import Dashboard from "./pages/Dashboard";
 import TechSkills from "./pages/TechSkills";
 import CoreSkills from "./pages/CoreSkills";
-import AdminMessages from "./pages/AdminMessages"; // keep even if empty
+import AdminMessages from "./pages/AdminMessages";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
 
       <div style={{ minHeight: "80vh" }}>
@@ -71,7 +71,7 @@ function App() {
       </div>
 
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
